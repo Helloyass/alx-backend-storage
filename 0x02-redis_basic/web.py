@@ -24,7 +24,7 @@ def url_count(method: Callable) -> Callable:
 
 
 @url_count
-def get_page(url: str) -> str:
+def get_page('http://slowwly.robertomurray.co.uk': str) -> str:
     """get a page and cache value"""
     response = requests.get(url)
     return response.text
